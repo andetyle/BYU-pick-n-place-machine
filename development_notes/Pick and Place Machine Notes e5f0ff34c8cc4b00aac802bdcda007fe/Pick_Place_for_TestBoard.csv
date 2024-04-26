@@ -1,0 +1,25 @@
+Altium Designer Pick and Place Locations
+J:\groups\alpaca\Pick and Place Machine\Test board\Test board\PCB_Project\Pick Place for TestBoard.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       11/07/23
+Time:       18:58
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Rotation","Description","Ref-X(mm)","Ref-Y(mm)"
+"FID3","Fiducial","TopLayer","Fiducial","90","1.2 mm fiducial, 3 mm wide total","105.9180","100.8380"
+"FID2","Fiducial","TopLayer","Fiducial","90","1.2 mm fiducial, 3 mm wide total","105.9180","80.1370"
+"FID1","Fiducial","TopLayer","Fiducial","0","1.2 mm fiducial, 3 mm wide total","129.0320","80.5180"
+"R5","RT0603BRD071KL","TopLayer","1608[0603]","320","1 kO","124.6858","85.2860"
+"R9","RNCP0603FTD100R","TopLayer","1608[0603]","40","100 O","126.4920","97.0280"
+"R8","RT0603BRD071KL","TopLayer","1608[0603]","70","1 kO","122.5550","99.6950"
+"R7","JR0603X26E","TopLayer","1608[0603]","270","0 O","117.2210","100.6490"
+"R6","RNCP0603FTD100R","TopLayer","1608[0603]","90","100 O","117.6020","81.6610"
+"R4","JR0603X26E","TopLayer","1608[0603]","0","0 O","126.3650","91.3130"
+"R3","RNCP0603FTD100R","TopLayer","1608[0603]","120","100 O","110.7440","99.4410"
+"R2","RT0603BRD071KL","TopLayer","1608[0603]","0","1 kO","108.4580","92.5830"
+"R1","JR0603X26E","TopLayer","1608[0603]","40","0 O","110.1412","85.0694"

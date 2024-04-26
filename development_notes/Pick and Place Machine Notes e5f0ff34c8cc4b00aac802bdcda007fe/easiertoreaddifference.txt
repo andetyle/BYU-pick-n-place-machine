@@ -1,0 +1,248 @@
+--- oldmachine.xml	2023-10-05 13:45:19.880864039 -0600
++++ loadedmachine.xml	2023-10-05 13:59:17.406725460 -0600
+@@ -6,8 +6,8 @@
+             <acceptable-tolerance value="0.03125" units="Millimeters"/>
+             <backlash-offset value="0.007978163531603855" units="Millimeters"/>
+             <sneak-up-offset value="0.0625" units="Millimeters"/>
+-            <soft-limit-low value="-57.0" units="Millimeters"/>
+-            <soft-limit-high value="415.0" units="Millimeters"/>
++            <soft-limit-low value="0.0" units="Millimeters"/>
++            <soft-limit-high value="420.0" units="Millimeters"/>
+             <safe-zone-low value="0.0" units="Millimeters"/>
+             <safe-zone-high value="0.0" units="Millimeters"/>
+             <feedrate-per-second value="1700.0" units="Millimeters"/>
+@@ -210,7 +210,7 @@
+             <acceptable-tolerance value="0.025" units="Millimeters"/>
+             <backlash-offset value="0.0" units="Millimeters"/>
+             <sneak-up-offset value="0.0" units="Millimeters"/>
+-            <soft-limit-low value="-62.0" units="Millimeters"/>
++            <soft-limit-low value="-46.0" units="Millimeters"/>
+             <soft-limit-high value="48.0" units="Millimeters"/>
+             <safe-zone-low value="-27.189956737278802" units="Millimeters"/>
+             <safe-zone-high value="16.601549599020245" units="Millimeters"/>
+@@ -262,17 +262,11 @@
+             <jerk-per-second-3 value="1.0E7" units="Millimeters"/>
+             <resolution>0.225</resolution>
+          </axis>
+-         <axis class="org.openpnp.machine.reference.axis.ReferenceMappedAxis" id="AXS1780db33f610dc20" name="MappedZ" type="Z" input-axis-id="AXS16426decf934e304">
+-            <map-input-0 value="0.0" units="Millimeters"/>
+-            <map-output-0 value="0.0" units="Millimeters"/>
+-            <map-input-1 value="1.0" units="Millimeters"/>
+-            <map-output-1 value="-1.0" units="Millimeters"/>
+-         </axis>
+       </axes>
+       <heads>
+          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="None" nozzle-solution="DualCam" nozzle-solutions-multiplier="1">
+             <nozzles>
+-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS16426decf928a508" axis-Y-id="AXS16426decf933bf9c" axis-Z-id="AXS16426decf9372a38" axis-rotation-id="AXS16426decf96801bc" id="N1" name="N1" rotation-mode="LimitedArticulation" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="100" current-nozzle-tip-id="TIP16cb0e83fd4ff8dc" changer-enabled="false" nozzle-tip-changed-on-manual-feed="true" enable-dynamic-safe-z="true" blow-off-closing-valve="true" version="200" limit-rotation="true">
++               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS16426decf928a508" axis-Y-id="AXS16426decf933bf9c" axis-Z-id="AXS16426decf9372a38" axis-rotation-id="AXS16426decf96801bc" id="N1" name="N1" rotation-mode="LimitedArticulation" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="100" current-nozzle-tip-id="TIP16cb0e83fd4ff8dc" changer-enabled="false" nozzle-tip-changed-on-manual-feed="true" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
+                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
+                      <string>TIP1579800676936</string>
+                      <string>TIP16cb0e4edcf56d90</string>
+@@ -285,18 +279,18 @@
+                      <string>TIP16cb0e97f6734848</string>
+                      <string>TIP16c0e8fe9d08454c</string>
+                   </compatible-nozzle-tip-ids>
+-                  <head-offsets units="Millimeters" x="33.317314586422654" y="-15.83185230420893" z="0.0" rotation="0.0"/>
+-                  <manual-nozzle-tip-change-location units="Millimeters" x="339.7907120577238" y="-139.41004611853305" z="0.0" rotation="0.0"/>
++                  <head-offsets units="Millimeters" x="33.2541559456108" y="-15.757273850270257" z="0.0" rotation="0.0"/>
++                  <manual-nozzle-tip-change-location units="Millimeters" x="339.727553416912" y="-139.33546766459438" z="0.0" rotation="0.0"/>
+                   <vacuum-sense-actuator-name>N1VAC</vacuum-sense-actuator-name>
+                   <vacuum-actuator-name>N1VAC</vacuum-actuator-name>
+                   <blow-off-actuator-name>BLOW</blow-off-actuator-name>
+                </nozzle>
+-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS16426decf928a508" axis-Y-id="AXS16426decf933bf9c" axis-Z-id="AXS16426decf93aa21c" axis-rotation-id="AXS16426decf9692970" id="NOZ177c3e026a5ebd3c" name="N2" rotation-mode="LimitedArticulation" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP177c38a18f917e98" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="true" blow-off-closing-valve="true" version="200" limit-rotation="true">
++               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS16426decf928a508" axis-Y-id="AXS16426decf933bf9c" axis-Z-id="AXS16426decf93aa21c" axis-rotation-id="AXS16426decf9692970" id="NOZ177c3e026a5ebd3c" name="N2" rotation-mode="LimitedArticulation" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP177c38a18f917e98" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
+                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
+                      <string>TIP177c38a18f917e98</string>
+                   </compatible-nozzle-tip-ids>
+-                  <head-offsets units="Millimeters" x="56.44588379242289" y="-16.043159734570725" z="0.0" rotation="0.0"/>
+-                  <manual-nozzle-tip-change-location units="Millimeters" x="752.6245279954047" y="365.36514995885096" z="-24.565631329235412" rotation="0.0"/>
++                  <head-offsets units="Millimeters" x="56.38667256666177" y="-16.00734245077123" z="0.0" rotation="0.0"/>
++                  <manual-nozzle-tip-change-location units="Millimeters" x="752.5653167696436" y="365.40096724265044" z="-24.565631329235412" rotation="0.0"/>
+                   <vacuum-sense-actuator-name>N2VAC</vacuum-sense-actuator-name>
+                   <vacuum-actuator-name>N2VAC</vacuum-actuator-name>
+                   <blow-off-actuator-name>BLOW</blow-off-actuator-name>
+@@ -307,11 +301,11 @@
+                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                   <safe-z value="0.0" units="Millimeters"/>
+                </actuator>
+-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579799730986" name="N2VAC" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16426decf5f501b0" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
++               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579799730986" name="N2VAC" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16426decf5f501b0" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                   <safe-z value="0.0" units="Millimeters"/>
+                </actuator>
+-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" axis-X-id="AXS16426decf928a508" axis-Y-id="AXS16426decf933bf9c" id="ACT1579799796417" name="DRAGPIN" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="true" driver-id="DRV16426decf5f501b0" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="ActuateOff" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="0">
++               <actuator class="org.openpnp.machine.reference.ReferenceActuator" axis-X-id="AXS16426decf928a508" axis-Y-id="AXS16426decf933bf9c" id="ACT1579799796417" name="DRAGPIN" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="true" driver-id="DRV16426decf5f501b0" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="ActuateOff" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+                   <interlock-monitor class="org.openpnp.machine.reference.ActuatorInterlockMonitor" interlock-type="ConfirmMatchBeforeAxesMove" interlock-axis-1-id="AXS16426decf928a508" interlock-axis-2-id="AXS16426decf933bf9c" confirmation-good-min="0.0" confirmation-good-max="0.0" confirmation-by-regex="false" conditional-actuator-id="ACT1579799796417" conditional-actuator-state="SwitchedOff" conditional-speed-min="0.0" conditional-speed-max="1.0">
+                      <confirmation-pattern><![CDATA[1]]></confirmation-pattern>
+                   </interlock-monitor>
+@@ -335,7 +329,7 @@
+                </actuator>
+             </actuators>
+             <cameras>
+-               <camera class="org.openpnp.machine.reference.camera.SwitcherCamera" axis-X-id="AXS16426decf928a508" axis-Y-id="AXS16426decf933bf9c" axis-Z-id="AXS16426decf9322128" axis-rotation-id="AXS16426decf932e478" id="CAM177b5781a54b3b2c" name="HeadCam" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Maximum" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="68.0" settle-debounce="3" settle-full-color="false" settle-gaussian-blur="5" settle-gradients="false" settle-mask-circle="1.4142135623730951" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.15024610181425294" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1579799620650" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" switcher="0" camera-id="CAM17689e64452e5a28" actuator-id="ACT17689e3fc9ec3188" actuator-double-value="0.0" actuator-delay-millis="500">
++               <camera class="org.openpnp.machine.reference.camera.SwitcherCamera" axis-X-id="AXS16426decf928a508" axis-Y-id="AXS16426decf933bf9c" axis-Z-id="AXS16426decf9322128" axis-rotation-id="AXS16426decf932e478" id="CAM177b5781a54b3b2c" name="HeadCam" looking="Down" auto-visible="true" shown-in-multi-camera-view="false" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Maximum" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="68.0" settle-debounce="3" settle-full-color="false" settle-gaussian-blur="5" settle-gradients="false" settle-mask-circle="1.4142135623730951" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.15024610181425294" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" switcher="0" camera-id="CAM17689e64452e5a28" actuator-id="ACT17689e3fc9ec3188" actuator-double-value="0.0" actuator-delay-millis="500">
+                   <units-per-pixel units="Millimeters" x="0.04210576054123446" y="0.04710218143495237" z="-12.496485280314811" rotation="0.0"/>
+                   <units-per-pixel-secondary units="Millimeters" x="0.04097606787943243" y="0.04580370806062992" z="-9.996485280314813" rotation="0.0"/>
+                   <camera-primary-z value="0.0" units="Millimeters"/>
+@@ -401,34 +395,21 @@
+             <calibration-secondary-fiducial-location units="Millimeters" x="254.69659315395035" y="94.65074672603771" z="-9.996485280314813" rotation="0.0"/>
+             <calibration-primary-fiducial-diameter value="1.010538252989627" units="Millimeters"/>
+             <calibration-secondary-fiducial-diameter value="0.9014734933475134" units="Millimeters"/>
+-            <calibration-test-object-diameter value="5.305325828195542" units="Millimeters"/>
++            <calibration-test-object-diameter value="6.528453818881076" units="Millimeters"/>
+          </head>
+       </heads>
+       <signalers/>
+       <feeders>
+-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1779860a02d42768" name="ReferenceDragFeeder" enabled="true" part-id="1608[0603]-JR0603X26E" retry-count="3" feed-retry-count="3" pick-retry-count="0">
+-            <location units="Millimeters" x="63.0" y="37.5" z="-11.0" rotation="0.0"/>
+-            <feed-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+-            <feed-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
++         <feeder class="org.openpnp.machine.reference.feeder.ReferencePushPullFeeder" version="1.1" id="FDR177308635ad029c4" name="ReferencePushPullFeeder" enabled="true" part-id="1608[0603]-JR0603X26E" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="true" used-as-template="false" calibrate-motion-x="true" calibrate-motion-y="true" feed-multiplier="1" feed-speed-push-2="1.0" feed-speed-push-3="1.0" feed-speed-push-end="1.0" feed-speed-pull-3="1.0" feed-speed-pull-2="1.0" feed-speed-pull-1="1.0" feed-speed-pull-0="1.0" included-push-1="false" included-push-2="false" included-push-3="true" included-push-end="true" included-multi-0="true" included-multi-1="false" included-multi-2="true" included-multi-3="false" included-multi-end="true" included-pull-0="true" included-pull-1="true" included-pull-2="false" included-pull-3="false" additive-rotation="true" actuator-name="DRAGPIN" feed-count="0" pipeline-type="CircularSymmetry" ocr-font-name="Liberation Mono" ocr-font-size-pt="7.0" ocr-wrong-part-action="SwapOrCreate" ocr-discover-on-job-start="true" ocr-stop-after-wrong-part="false" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" row-location-tolerance-mm="4.0" row-Z-location-tolerance-mm="1.0" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident">
++            <location units="Millimeters" x="65.08627261072364" y="37.68360527288574" z="-11.2" rotation="0.0"/>
++            <hole-1-location units="Millimeters" x="59.08627261072364" y="41.18360527288574" z="-0.0" rotation="0.0"/>
++            <hole-2-location units="Millimeters" x="67.08627261072364" y="41.18360527288574" z="0.0" rotation="0.0"/>
++            <feed-start-location units="Millimeters" x="71.2" y="41.5" z="0.0" rotation="0.0"/>
++            <feed-mid-1-location units="Millimeters" x="75.2" y="41.5" z="0.0" rotation="0.0"/>
++            <feed-mid-2-location units="Millimeters" x="75.2" y="41.5" z="0.0" rotation="0.0"/>
++            <feed-mid-3-location units="Millimeters" x="71.2" y="41.5" z="0.0" rotation="0.0"/>
++            <feed-end-location units="Millimeters" x="65.086" y="37.684" z="0.0" rotation="0.0"/>
+             <part-pitch value="4.0" units="Millimeters"/>
+-            <feed-speed>1.0</feed-speed>
+-            <vision enabled="false">
+-               <area-of-interest x="0" y="0" width="0" height="0"/>
+-               <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+-               <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+-            </vision>
+-            <backoff-distance value="0.0" units="Millimeters"/>
+-         </feeder>
+-         <feeder class="org.openpnp.machine.reference.feeder.ReferencePushPullFeeder" version="1.1" id="FDR1780da66965ba328" name="ReferencePushPullFeeder" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="true" used-as-template="false" calibrate-motion-x="true" calibrate-motion-y="true" feed-multiplier="1" feed-speed-push-2="1.0" feed-speed-push-3="1.0" feed-speed-push-end="1.0" feed-speed-pull-3="1.0" feed-speed-pull-2="1.0" feed-speed-pull-1="1.0" feed-speed-pull-0="1.0" included-push-1="false" included-push-2="false" included-push-3="false" included-push-end="false" included-multi-0="false" included-multi-1="true" included-multi-2="false" included-multi-3="false" included-multi-end="true" included-pull-0="true" included-pull-1="true" included-pull-2="true" included-pull-3="false" additive-rotation="true" actuator-name="DRAGPIN" feed-count="0" pipeline-type="CircularSymmetry" ocr-font-name="Liberation Mono" ocr-font-size-pt="7.0" ocr-wrong-part-action="None" ocr-discover-on-job-start="false" ocr-stop-after-wrong-part="false" calibration-count="1" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" row-location-tolerance-mm="4.0" row-Z-location-tolerance-mm="1.0" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident">
+-            <location units="Millimeters" x="63.65231042783144" y="40.6431423994846" z="-11.0" rotation="180.0"/>
+-            <hole-1-location units="Millimeters" x="71.65231042783144" y="41.1431423994846" z="-0.0" rotation="0.0"/>
+-            <hole-2-location units="Millimeters" x="59.65231042783144" y="41.1431423994846" z="0.0" rotation="0.0"/>
+-            <feed-start-location units="Millimeters" x="68.507" y="41.601" z="0.0" rotation="0.0"/>
+-            <feed-mid-1-location units="Millimeters" x="68.507" y="41.601" z="0.0" rotation="0.0"/>
+-            <feed-mid-2-location units="Millimeters" x="73.0" y="41.601" z="0.0" rotation="0.0"/>
+-            <feed-mid-3-location units="Millimeters" x="73.0" y="41.601" z="0.0" rotation="0.0"/>
+-            <feed-end-location units="Millimeters" x="68.507" y="41.601" z="0.0" rotation="0.0"/>
+-            <part-pitch value="2.0" units="Millimeters"/>
+             <feed-pitch value="4.0" units="Millimeters"/>
+             <feed-speed-push-1>1.0</feed-speed-push-1>
+             <pipeline>
+@@ -449,12 +430,25 @@
+                </stages>
+             </pipeline>
+             <precision-wanted value="0.1" units="Millimeters"/>
+-            <sum-of-errors value="0.02742880025769523" units="Millimeters"/>
+-            <sum-of-error-squares value="7.523390835765419E-4" units="Millimeters"/>
++            <sum-of-errors value="0.0" units="Millimeters"/>
++            <sum-of-error-squares value="0.0" units="Millimeters"/>
++         </feeder>
++         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1779860a02d42768" name="ReferenceDragFeeder" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0">
++            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
++            <feed-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
++            <feed-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
++            <part-pitch value="4.0" units="Millimeters"/>
++            <feed-speed>1.0</feed-speed>
++            <vision enabled="false">
++               <area-of-interest x="0" y="0" width="0" height="0"/>
++               <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
++               <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
++            </vision>
++            <backoff-distance value="0.0" units="Millimeters"/>
+          </feeder>
+       </feeders>
+       <cameras>
+-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM17689e4d9de847d0" name="CaptureDevice" looking="Down" auto-visible="true" shown-in-multi-camera-view="false" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="7" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="0.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.048281267074364594" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1579799618401" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="AV TO USB2.0 \\?\usb#vid_534d&amp;pid_0021&amp;mi_00#6&amp;5e942b1&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
++         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM17689e4d9de847d0" name="CaptureDevice" looking="Down" auto-visible="true" shown-in-multi-camera-view="false" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="7" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="0.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.048281267074364594" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="AV TO USB2.0 \\?\usb#vid_534d&amp;pid_0021&amp;mi_00#6&amp;5e942b1&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
+             <units-per-pixel units="Millimeters" x="0.03799693842872717" y="0.04259894926949953" z="0.0" rotation="0.0"/>
+             <camera-primary-z value="-1.6133333333333315" units="Millimeters"/>
+             <default-z value="-1.6133333333333315" units="Millimeters"/>
+@@ -516,13 +510,13 @@
+             <white-balance property="WhiteBalance"/>
+             <zoom property="Zoom"/>
+          </camera>
+-         <camera class="org.openpnp.machine.reference.camera.SwitcherCamera" id="CAM17689e586e72d94c" name="Bottom Switcher" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="7" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="15.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.02636097743213056" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT17689e3fc9ec3188" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" switcher="0" camera-id="CAM17689e4d9de847d0" actuator-id="ACT17689e3fc9ec3188" actuator-double-value="818.0" actuator-delay-millis="500">
++         <camera class="org.openpnp.machine.reference.camera.SwitcherCamera" id="CAM17689e586e72d94c" name="Bottom Switcher" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="7" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="15.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.02636097743213056" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1579799618401" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" switcher="0" camera-id="CAM17689e4d9de847d0" actuator-id="ACT17689e3fc9ec3188" actuator-double-value="818.0" actuator-delay-millis="500">
+             <units-per-pixel units="Millimeters" x="0.038617173328506185" y="0.04320114584289169" z="0.0" rotation="0.0"/>
+             <camera-primary-z value="-0.4964852803148277" units="Millimeters"/>
+             <default-z value="-0.4964852803148277" units="Millimeters"/>
+             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+             <roaming-radius value="0.0" units="Millimeters"/>
+-            <head-offsets units="Millimeters" x="166.78939519977195" y="29.745051061704586" z="-0.4964852803148277" rotation="0.0"/>
++            <head-offsets units="Millimeters" x="166.7262365589601" y="29.819629515643257" z="-0.4964852803148277" rotation="0.0"/>
+             <calibration enabled="false">
+                <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+                <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+@@ -563,7 +557,7 @@
+                <focal-resolution value="0.05" units="Millimeters"/>
+             </focus-provider>
+          </camera>
+-         <camera class="org.openpnp.machine.reference.camera.SwitcherCamera" id="CAM17689e64452e5a28" name="Top Switcher" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="15.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.2787878787878788" green-balance="1.0" blue-balance="1.0603015075376885" red-gamma="0.8335647741307954" green-gamma="1.0568062812237047" blue-gamma="1.1290288683368939" deinterlace="false" light-actuator-id="ACT17689e3fc9ec3188" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" switcher="0" camera-id="CAM17689e4d9de847d0" actuator-id="ACT17689e3fc9ec3188" actuator-double-value="819.0" actuator-delay-millis="500">
++         <camera class="org.openpnp.machine.reference.camera.SwitcherCamera" id="CAM17689e64452e5a28" name="Top Switcher" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="15.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.2787878787878788" green-balance="1.0" blue-balance="1.0603015075376885" red-gamma="0.8335647741307954" green-gamma="1.0568062812237047" blue-gamma="1.1290288683368939" deinterlace="false" light-actuator-id="ACT1579799620650" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" switcher="0" camera-id="CAM17689e4d9de847d0" actuator-id="ACT17689e3fc9ec3188" actuator-double-value="819.0" actuator-delay-millis="500">
+             <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+             <default-z value="0.0" units="Millimeters"/>
+             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+@@ -619,12 +613,9 @@
+          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT17689e3fc9ec3188" name="SWITCHER" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16426decf5f501b0" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+          </actuator>
+-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1780da0fe2200b0c" name="DRAGPIN" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16426decf5f501b0" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="ActuateOff" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+-         </actuator>
+       </actuators>
+       <part-alignments>
+-         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS177a650370a7055c" enabled="true" pre-rotate="true" max-vision-passes="5" max-angular-offset="10.0" test-alignment-angle="90.0">
++         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS_Stock" enabled="true" pre-rotate="true" max-vision-passes="5" max-angular-offset="10.0" test-alignment-angle="90.0">
+             <max-linear-offset value="1.0" units="Millimeters"/>
+          </part-alignment>
+       </part-alignments>
+@@ -1054,7 +1045,7 @@
+       <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="Part" max-vision-retries="3" stepping-to-next-motion="true">
+          <planner class="org.openpnp.machine.reference.ReferencePnpJobProcessor$SimplePnpJobPlanner"/>
+       </pnp-job-processor>
+-      <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" fiducial-vision-id="FVS177a652ace91c93c" enabled-averaging="true" repeat-fiducial-recognition="5">
++      <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" fiducial-vision-id="FVS_Stock" enabled-averaging="true" repeat-fiducial-recognition="5">
+          <max-distance value="2.0" units="Millimeters"/>
+          <tolerances>
+             <scaling-tolerance>0.05</scaling-tolerance>
+@@ -1076,13 +1067,11 @@
+          <dismissed-solutions class="java.util.HashSet">
+             <string>f00a3fff48249f89869052f7c580cc455ebf2af7</string>
+             <string>cd529addac51791b9c96e93b4a9e3b6cef7b87c9</string>
+-            <string>7f9b510fe7ff494e0692254bc0558fac11fab186</string>
+             <string>ded1cb82232f3e2a947f3c33d0b42e7583bff07b</string>
+             <string>2e30bd4a78450764659475f50ebc42985985867a</string>
+             <string>fbf0fe1ce3b5a7b6a304b897f362037589d7b31e</string>
+             <string>46ea327ac2c07c35b50b0915705b340f31aaaddf</string>
+             <string>079614004f64e158051ad5cc7932b86ae648aebb</string>
+-            <string>af7e282e7d26c89b05e8e866e6e07ad1e024f210</string>
+             <string>4e1ccf601fa2b73c4ca30131c3fd667c0e56e982</string>
+             <string>8bda1a029713b75e10301a8a5b1e1a2add535e39</string>
+             <string>d393ee22f9c2159338d64d45a5e928c3cb6be1a5</string>
+@@ -1091,15 +1080,10 @@
+             <string>baf6e8da20bb4f091e3481f77a9e76327d630fc7</string>
+             <string>12f1eb616a12a01d8a3133de4b04a24be0dd20c2</string>
+             <string>2791efa7f6af0fc7a73faa07002dd2f5b3312079</string>
+-            <string>32ad499083378b9dbdea90536a272164ca4dd9c3</string>
+-            <string>712ca54985bb8340a8d44a543c71398f035fb62a</string>
+             <string>8374e98b245bf1866085f05a18aca5d41fa92962</string>
+-            <string>d9ee7a8fc9642245a5e280c1845247904f483e19</string>
+             <string>51bb5ce693787ee3d83731400d89a3c51efdab41</string>
+-            <string>81c1caffb57e1eedac5f6629ad58af699b65c39a</string>
+             <string>2e30e314b908b2bb97696375ea45cbdcf7cecdad</string>
+             <string>7ca2a55111140420f5fb94067f9748361cc06002</string>
+-            <string>9f523f4e8cb2b4eb59775eb42da6776ffa755f4f</string>
+             <string>7eb11a551586c9aa9dc35cd19fe6920b8638b7b6</string>
+             <string>3f31a7360eb3c517fa6941c2dba3d47341fdbd95</string>
+             <string>6ab5a89d6f78b96f610309e4e85ee4edf875dcd7</string>
+@@ -1127,7 +1111,6 @@
+             <string>2232e07f6085c0a347b9d658cf91923b18466e1f</string>
+             <string>cda0e6339e8851eedc18f8d263f2af912202584d</string>
+             <string>947dd5a3c6e9e7e6b4479fc77c9f30c92e66fa31</string>
+-            <string>2033b3e04a15ab463f1ee9b7147478e317717571</string>
+             <string>ae58e1cf3e87a64656d7f1f1e09ae68f6f108898</string>
+             <string>d0cdf1c68b2d2effd44748eb86ab84e52e562c7c</string>
+             <string>7f084e0192e394e7a48184e5584eb50b99c8f08a</string>
