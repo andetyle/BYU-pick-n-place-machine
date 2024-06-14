@@ -1,0 +1,63 @@
+<openpnp-board version="1.1" name="Power_Amp.OutJob.board.xml">
+   <dimensions units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+   <fiducials/>
+   <placements>
+      <placement version="1.4" id="1" side="Top" part-id="RESC1609X50X30NL8T20-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.496" y="36.449" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="L2" side="Top" part-id="IND1005X55X20VL5T10-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="26.288999999999998" y="42.5155106" z="0.0" rotation="-90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R2" side="Top" part-id="RESC1005X40X25ML05T05-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="26.288999999999998" y="39.759001" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="L1" side="Top" part-id="IND1005X55X20VL5T10-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="26.219734199999998" y="36.95125959999999" z="0.0" rotation="-90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="C2" side="Top" part-id="CAPC0402(1005)60_L-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="26.669999999999998" y="38.354" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="C3" side="Top" part-id="CAPC0402(1005)60_L-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="26.669999999999998" y="41.147999999999996" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R1" side="Top" part-id="RESC1005X40X25ML05T05-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="23.241" y="38.989" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="U1" side="Top" part-id="GRF4014-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.256999999999998" y="36.948999" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="F1" side="Top" part-id="FV1206-Comment" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.671" y="36.449" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="J1" side="Top" part-id="FP-142-0701-801-MFG-142-0701-801" type="Placement" enabled="true">
+         <location units="Millimeters" x="0.889" y="36.449" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="P1" side="Top" part-id="61300211121-61300211121" type="Placement" enabled="true">
+         <location units="Millimeters" x="26.924" y="45.974" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="J2" side="Top" part-id="FP-142-0701-801-MFG-142-0701-801" type="Placement" enabled="true">
+         <location units="Millimeters" x="44.5516" y="36.449" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="C4" side="Top" part-id="CAPC1608X90X35NL15T15-06031A330FAT2A" type="Placement" enabled="true">
+         <location units="Millimeters" x="29.083" y="36.451997199999994" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="C1" side="Top" part-id="CAPC1608X90X35NL15T15-06031A330FAT2A" type="Placement" enabled="true">
+         <location units="Millimeters" x="21.082" y="36.449" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+   </placements>
+   <solder-paste-pads/>
+</openpnp-board>
